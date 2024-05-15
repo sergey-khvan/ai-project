@@ -42,7 +42,7 @@ def main_worker(rank, world_size):
     device = torch.device(f'cuda:{rank}')
 
     if rank == 0:
-        wandb.init(project="grape-classification", entity="your_wandb_username")
+        wandb.init(project="grape-classification")
         wandb.config = {
             "learning_rate": 1e-3,
             "epochs": 10,
