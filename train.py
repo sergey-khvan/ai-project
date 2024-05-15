@@ -152,7 +152,7 @@ def main_worker(rank, world_size):
     dist.destroy_process_group()
 
 def main():
-    world_size = 2  # Number of GPUs
+    world_size = 4  # Number of GPUs
     os.environ['MASTER_ADDR'] = 'localhost'
     os.environ['MASTER_PORT'] = '12355'
     
